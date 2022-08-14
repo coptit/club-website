@@ -1,0 +1,33 @@
+.main-content {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.main-content .img-wrapper {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.main-content .intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2rem;
+    align-self: center;
+}
+
+@media (max-width: 900px) {
+    .main-content .img-wrapper {
+        display: none;
+    }
+
+    .main-content {
+        justify-content: center;
+    }
+
+}

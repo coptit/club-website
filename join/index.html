@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kunal Singh">
+    <meta name="description"
+        content="artustop is small, fast and open-source browser extension for stopping HTML iframes.">
+
+    <meta data-react-helmet="true" property="og:site_name" content="artustop">
+    <meta data-react-helmet="true" property="og:image"
+        content="https://user-images.githubusercontent.com/82411321/182305363-f1614c04-0e3c-41a8-a245-5cceeb057626.png">
+    <meta data-react-helmet="true" property="og:url" content="https://artustop.kunalsin9h.dev/join/">
+    <meta data-react-helmet="true" property="og:type" content="website">
+    <meta data-react-helmet="true" property="og:description"
+        content="artustop is a small, fast and open-sourcebrowser extension for stopping HTML iframes.">
+    <meta data-react-helmet="true" property="og:title" content="Join | artustop">
+    <meta data-react-helmet="true" name="description"
+        content="artustop is a small, fast and open-source browser extension for stopping HTML iframes.">
+
+    <title>Join | artustop</title>
+
+    <link rel="icon" href="../images/micon.png" type="image/png">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./join.css">
+
+</head><!-- head -->
+
+<body class="container full-height-grow">
+
+    <header class="main-header">
+
+        <a href="/" class="main-logo">
+            <img src="../images/brand-logo.png" alt="logo" style="height: 60px;">
+            <div class="main-logo-text">COPTIT</div>
+        </a>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="https://discord.gg/uWZQP7q3UJ" target="_blank">Discord</a></li>
+                <li><a href="https://github.com/coptit-c">GitHub</a></li>
+            </ul>
+        </nav>
+    </header><!-- header -->
+
+    <section class="join-main-section">
+        <div class="join-all">
+            <h1 class="join-text title">Join the <span>Community</span></h1>
+            <span class="subtitle join-des">Get updated on every fun and exciting activity and take part in innovative
+                and collaborative group activities and contests.</span>
+        </div>
+
+        <form class="join-form" method="post" autocomplete="off" name="google-sheet">
+            <div class="input">
+                <label>First Name</label>
+                <input type="text" name="First Name" class="form-control" value="" required="" />
+            </div>
+            <div class="input">
+                <label>Last Name</label>
+                <input type="text" name="Last Name" class="form-control" value="" required="" />
+            </div>
+            <div class="input">
+                <label>TIT - (M/E/S/A)</label>
+                <input type="text" name="TIT" class="form-control" placeholder="M/E/S/A" value="" required="" />
+            </div>
+            <div class="input">
+                <label>Email</label>
+                <input type="text" name="Email" class="form-control" value="" required="" />
+            </div>
+            <div class="input">
+                <button type="submit" class="btn">Join Now</button>
+            </div>
+        </form>
+
+    </section>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxB9KoVN8WLfu1t2RipSQMgrBszgIOxXFtWsd5cONkWOYy_UpkYZauzoEMjmWbvpmbs/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for joining!"))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body><!-- body -->
+
+</html>

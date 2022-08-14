@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.full-height-grow {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-logo {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.main-logo-text {
+    margin-left: 10px;
+    font-family: 'Righteous', cursive;
+}
+
+.main-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav a {
+    color: black;
+    font-family: 'Righteous', cursive;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.main-nav a:hover {
+    color: gray;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    color: black;
+    font-weight: 600;
+    background-color: gray;
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border: 1px black solid;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid red;
+}
+
+.btn:focus {
+    background-color: dimgray
+}
