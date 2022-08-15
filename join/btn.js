@@ -1,6 +1,5 @@
 function myFunction(){
 let btnSend = document.querySelector('button');
-let message = document.querySelector('button');
 
 btnSend.addEventListener('click', () =>{
     btnSend.innerText = 'Joining...';
