@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="./join.css">
-    <script src="btn.js"></script>
 
 </head><!-- head -->
 
@@ -59,10 +58,10 @@
             </div>
             <div class="input">
                 <label>Email</label>
-                <input type="text" name="Email" class="form-control" value="" required="" />
+                <input type="email" name="Email" class="form-control" value="" required="" />
             </div>
             <div class="input">
-                <button type="submit" class="btn" onclick="myFunction()">Join Now</button>
+                <button type="submit" class="btn">Join Now</button>
             </div>
         </form>
 
@@ -73,10 +72,15 @@
         const form = document.forms['google-sheet']
 
         form.addEventListener('submit', e => {
+            let btnSend = document.querySelector('button');
+            btnSend.innerText = 'Joining...';
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => alert("Thanks for joining!"))
                 .catch(error => console.error('Error!', error.message))
+            setTimeout(() => {
+                btnSend.innerText = 'Joined';
+            }, 3000);
         })
     </script>
 
