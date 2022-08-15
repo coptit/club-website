@@ -137,3 +137,7 @@ body {
     border: 1px #ff0066 solid;
     border-radius: 10px;
 }
+
+.joining:focus {
+    background-color: lightgreen;
+}
