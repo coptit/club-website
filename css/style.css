@@ -108,11 +108,11 @@ body {
 
 .gradient {
     color: #79c0ff;
-    background: linear-gradient(92.7deg, #00cc88 -1.37%, #ff0066 78.71%);
+    background: linear-gradient(70deg, #FDA000 -1.37%, #ff0066 78.71%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 5px;
+    padding: 1px;
 }
 
 @media (max-width: 500px) {
