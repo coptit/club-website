@@ -17,12 +17,12 @@
     background-color: black;
     width: 50vw;
     max-width: 50%;
-    padding: 2rem;
-    border-radius: 20px;
+    padding: 1.3rem;
+    border-radius: 5px;
 }
 
 .input {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
 }
@@ -45,11 +45,11 @@
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
     font-size: 1.3em;
-    padding: 5px;
+    padding: 4px;
 }
 
 .input input:focus {
-    border-color: lightgreen;
+    border-color: #ff0066;
 }
 
 .join-main-section .join-all .join-des {
@@ -81,5 +81,17 @@
 
     .input input {
         font-size: .7em;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .discord-up,
+    .project-up {
+        display: none;
+    }
+
+    .main-header {
+        justify-content: center;
     }
 }
