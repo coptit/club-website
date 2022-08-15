@@ -51,7 +51,7 @@ body {
 }
 
 .main-nav a:hover {
-    color: gray;
+    color: #ff3300;
 }
 
 .main-header {
@@ -82,9 +82,9 @@ body {
 }
 
 .btn {
-    color: black;
+    color: white;
     font-weight: 600;
-    background-color: gray;
+    background-color: #ff0066;
     padding: .75rem 1.5rem;
     border-radius: .5rem;
     text-decoration: none;
@@ -93,15 +93,47 @@ body {
     outline: none;
     border: none;
     cursor: pointer;
-    border: 1px black solid;
+    border: 1px #ff0066 solid;
 }
 
 .btn:hover {
     background-color: white;
     color: black;
-    border: 1px solid red;
+    border: 2px solid #ff0066;
 }
 
 .btn:focus {
-    background-color: dimgray
+    background-color: #ff0066;
+}
+
+.gradient {
+    color: #79c0ff;
+    background: linear-gradient(92.7deg, #00cc88 -1.37%, #ff0066 78.71%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 5px;
+}
+
+@media (max-width: 500px) {
+
+    .discord-up,
+    .project-up,
+    .join-down {
+        display: none;
+    }
+}
+
+@media (min-width: 501px) {
+
+    .discord-down,
+    .project-down,
+    .join-up {
+        display: none;
+    }
+}
+
+.top {
+    border: 1px #ff0066 solid;
+    border-radius: 10px;
 }
