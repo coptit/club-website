@@ -53,8 +53,8 @@
                 <input type="text" name="Last Name" class="form-control" value="" required="" />
             </div>
             <div class="input">
-                <label>TIT - (M/E/S/A)</label>
-                <input type="text" name="TIT" class="form-control" placeholder="M/E/S/A" value="" required="" />
+                <label>TIT - (M/E/S/C)</label>
+                <input type="text" name="TIT" class="form-control" placeholder="M/E/S/C" value="" required="" />
             </div>
             <div class="input">
                 <label>Email</label>
@@ -73,7 +73,7 @@
 
         form.addEventListener('submit', e => {
             let btnSend = document.querySelector('button');
-            btnSend.innerText = 'Joining...';
+            btnSend.innerText = 'Wait a sec, Joining...';
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => alert("Thanks for joining!"))
