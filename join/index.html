@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="COPTIT">
-    <meta name="description" content="Programming Club">
+    <meta name="description" content="Club of Programmers, Technocrats Institute of Technology">
 
     <title>Join - COPTIT</title>
 
@@ -74,12 +74,14 @@
         form.addEventListener('submit', e => {
             let btnSend = document.querySelector('button');
             btnSend.innerText = 'Wait a sec, Joining...';
+            btnSend.style.cursor = 'progress';
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => alert("Thanks for joining!"))
                 .catch(error => console.error('Error!', error.message))
             setTimeout(() => {
                 btnSend.innerText = 'Joined';
+                btnSend.style.cursor = 'pointer';
             }, 3000);
         })
     </script>
