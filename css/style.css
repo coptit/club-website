@@ -141,3 +141,8 @@ body {
 .joining:focus {
     background-color: lightgreen;
 }
+
+.selection::selection {
+    background-color: #33ffff;
+    color: black;
+}
