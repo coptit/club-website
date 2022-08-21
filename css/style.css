@@ -99,15 +99,13 @@ body {
 .btn:hover {
     background-color: white;
     color: black;
-    border: 2px solid #ff0066;
 }
 
-.btn:focus {
-    background-color: #ff0066;
+.btn:active {
+    transform: translateY(4px);
 }
 
 .gradient {
-    color: #79c0ff;
     background: linear-gradient(70deg, #FDA000 -1.37%, #ff0066 78.71%);
     background-clip: text;
     -webkit-background-clip: text;
