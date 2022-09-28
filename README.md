@@ -1,2 +1,1 @@
-# coptit-c.github.io
-website
+Club Website for Coptit club.

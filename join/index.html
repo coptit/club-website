@@ -31,7 +31,7 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="https://discord.gg/uWZQP7q3UJ" target="_blank" class="discord-up">Discord</a></li>
-                <li><a href="https://github.com/coptit-c" class="project-up">Projects</a></li>
+                <li><a href="https://github.com/coptit" class="project-up">Projects</a></li>
             </ul>
         </nav>
     </header><!-- header -->
@@ -54,7 +54,7 @@
                 <input type="text" name="Last Name" class="form-control" value="" required="" placeholder="Last Name" />
             </div>
             <div class="input">
-                <input type="text" name="TIT" class="form-control" placeholder="M/E/S/C" value="" required="" />
+                <input type="text" name="TIT" class="form-control" placeholder="Collage (M/E/S/C)" value="" required="" />
             </div>
             <div class="input">
                 <input type="email" name="Email" class="form-control" value="" required="" placeholder="Email" />
@@ -68,6 +68,7 @@
 
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxB9KoVN8WLfu1t2RipSQMgrBszgIOxXFtWsd5cONkWOYy_UpkYZauzoEMjmWbvpmbs/exec'
+
         const form = document.forms['google-sheet']
 
         form.addEventListener('submit', e => {
@@ -81,6 +82,10 @@
             setTimeout(() => {
                 btnSend.innerText = 'Joined';
                 btnSend.style.cursor = 'pointer';
+                btnSend.style.backgroundColor = `#90EE90`;
+                btnSend.style.border = `1px solid white`;
+                btnSend.style.color = `black`;
+                btnSend.style.pointerEvents = `none`;
             }, 3000);
         })
     </script>
