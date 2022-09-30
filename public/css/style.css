@@ -116,7 +116,7 @@ body {
 @media (max-width: 500px) {
 
     .discord-up,
-    .project-up,
+    .github-up,
     .join-down {
         display: none;
     }
@@ -125,7 +125,7 @@ body {
 @media (min-width: 501px) {
 
     .discord-down,
-    .project-down,
+    .github-down,
     .join-up {
         display: none;
     }

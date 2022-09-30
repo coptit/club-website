@@ -87,7 +87,7 @@
 @media (max-width: 500px) {
 
     .discord-up,
-    .project-up {
+    .github-up {
         display: none;
     }
 
