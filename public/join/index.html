@@ -77,16 +77,18 @@
             btnSend.style.cursor = 'progress';
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => alert("Thanks for joining!"))
-                .catch(error => console.error('Error!', error.message))
-            setTimeout(() => {
-                btnSend.innerText = 'Joined';
-                btnSend.style.cursor = 'pointer';
-                btnSend.style.backgroundColor = `#90EE90`;
-                btnSend.style.border = `1px solid white`;
-                btnSend.style.color = `black`;
-                btnSend.style.pointerEvents = `none`;
-            }, 3000);
+                .then(response => {
+                    btnSend.innerText = 'Joined';
+                    btnSend.style.cursor = 'pointer';
+                    btnSend.style.backgroundColor = `#90EE90`;
+                    btnSend.style.border = `1px solid white`;
+                    btnSend.style.color = `black`;
+                    btnSend.style.pointerEvents = `none`;
+                })
+                .catch(error => {
+                    alert("Something went wrong, please try again!");
+                    console.error('Error!', error.message);
+                })
         })
     </script>
 
