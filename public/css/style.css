@@ -9,12 +9,15 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    /* Resetting margin, padding  */
+    margin: 0;
+    padding: 0;
 }
 
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    /* min-height: 100vh;*/
 }
 
 .full-height-grow {
@@ -48,6 +51,7 @@ body {
     font-family: 'Righteous', cursive;
     text-decoration: none;
     padding: 1rem;
+    transition: all 0.2s;
 }
 
 .main-nav a:hover {
@@ -94,11 +98,12 @@ body {
     border: none;
     cursor: pointer;
     border: 1px #ff0066 solid;
+    transition: all 0.2s;
 }
 
 .btn:hover {
-    background-color: white;
-    color: black;
+    background-color: transparent;
+    color: #ff0066;
 }
 
 .btn:active {
@@ -143,4 +148,63 @@ body {
 .selection::selection {
     background-color: #33ffff;
     color: black;
+}
+
+.upcomming-events h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    margin-left: 7vw;
+    position: relative;
+}
+
+.upcomming-events h1::before {
+    content: " ";
+    background-color: #ff0066;
+    position: absolute;
+    width: 6.5vw;
+    height: 3px;
+    top: 40%;
+    left: -7vw;
+}
+
+.eventlist {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 3rem;
+    padding: 0;
+}
+
+.event {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    /* background: lightblue; temp */
+    cursor: pointer;
+}
+
+.event-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.event-register {
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    background-color: #ff0066;
+    text-decoration: none;
+    border: 2px solid #ff0066;
+    transition: all 0.2s;
+}
+.event-register:hover {
+    background-color: transparent;
+    color: #ff0066;
+}
+
+.event-register:active {
+    transform: translateY(4px);
 }
