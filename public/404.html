@@ -13,52 +13,54 @@
 
     <link rel="icon" href="https://coptit.firebaseapp.com/images/favicon.png" type="image/png">
 
-    <link rel="stylesheet" href="https://coptit.firebaseapp.com/css/normalize.css">
-    <link rel="stylesheet" href="https://coptit.firebaseapp.com/css/style.css">
-    <link rel="stylesheet" href="https://coptit.firebaseapp.com/css/index.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
 
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
 
-      .title-404 {
+    .title-404 {
         font-size: 8rem;
         text-align: center;
         font-family: 'Reem Kufi Ink', sans-serif;
-      }
+    }
 
-      .desc {
+    .desc {
         text-align: center;
         font-family: 'Josefin Sans', sans-serif;
         font-size: 2rem;
         color: rgba(0, 0, 0, 0.6);
-      }
+        margin-bottom: 2rem;
+    }
 
-      .more {
+    .more {
         text-align: center;
         font-family: 'Josefin Sans', sans-serif;
         font-size: 1.2rem;
-      }
+        margin-bottom: 1rem;
+    }
 
-      .loc {
+    .loc {
         color: blueviolet
-      }
+    }
 
-      .exist {
+    .exist {
         color: red;
-      }
+    }
 
-      .con {
+    .con {
         color: rgba(0, 0, 0, 0.7);
-      }
-      .email {
+    }
+    .email {
         color: black;
-      }
-      a {
+    }
+    .a-email {
         text-decoration: none;
-      }
-      a:hover {
+    }
+    .a-email:hover {
         text-decoration: underline;
-      }
+    }
     </style>
 
 </head><!-- head -->
@@ -68,30 +70,39 @@
     <header class="main-header">
 
         <a href="/" class="main-logo">
-
-            <img src="https://coptit.firebaseapp.com/images/brand-logo.png" alt="logo" style="height: 60px;">
-
+            <img src="./images/brand-logo.png" alt="logo" style="height: 60px;">
             <div class="main-logo-text">COPTIT</div>
         </a>
 
         <nav class="main-nav">
             <ul>
-                <li class="join-up-404"><a href="https://coptit.firebaseapp.com/join/" class="top">Join</a></li>
-
-                <li class="discord-up"><a href="https://discord.gg/uWZQP7q3UJ" target="_blank">Discord</a></li>
-                <li class="github-up"><a href="https://github.com/coptit">GitHub</a></li>
+                <li class="discord-up">
+                    <a href="https://discord.gg/uWZQP7q3UJ" target="_blank">
+                        <ion-icon name="logo-discord"></ion-icon>
+                    </a>
+                </li>
+                <li class="github-up">
+                    <a href="https://github.com/coptit">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </li>
             </ul>
         </nav>
+        <a href="./join/" class=" join-up btn-join">Join</a>
 
     </header><!-- header -->
+    
 
     <section class="main-content-404">
       <div class="title-404">404</div>
       <div class="desc">SORRY, Page Not Found!</div>
       <p class="more">What you are looking for may be moved to a <span class="loc">different location</span> or just <span class="exist">does not exist</span>.</p>
-      <p class="more con">contact us: <a href="mailto:coptit.club@gmail.com?subject=404-Page Not Found error" ><span class="email">coptit.club@gmail.com</span></a></p>
+      <p class="more con">contact us: <a href="mailto:coptit.club@gmail.com?subject=404-Page Not Found error" class="a-email"><span class="email">coptit.club@gmail.com</span></a></p>
     </section>
-
+    
+    <!-- Ion-icons  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body><!-- body -->
 
 </html>

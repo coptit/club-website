@@ -102,6 +102,10 @@ body {
     color: #ff0066;
 }
 
+.btn-join:active {
+    transform: translateY(4px);
+}
+
 .align-btn {
     display: flex;
     gap: 1.5rem;
@@ -235,11 +239,16 @@ body {
 }
 
 /* Footer-design */
-
+/* footer {
+    position: relative;
+} */
 .copyright-disclaimer {
     text-align: center;
     font-family: 'poppins', sans-serif;
     margin: 1rem 0;
-    /* position: absolute;
-    bottom: 0; */
+    position: absolute;
+    /* bottom: 0; */
+    left: 50%;
+    transform: translate(-50%, 50%);
+    margin: auto;
 }

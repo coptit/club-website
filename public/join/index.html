@@ -74,12 +74,52 @@
     </header><!-- header -->
 
     <section class="join-main-section">
-        <div class="join-all">
-            <h1 class="join-text title"><span class="selection">Join the </span><span class="gradient">Community</span>
-            </h1>
-            <span class="subtitle join-des selection">Get updated on every fun and exciting activity and take part in
-                innovative
-                and collaborative projects and contests.</span>
+        <div class="join-container">
+            <!-- join-banner -->
+            <div class="join-banner">
+                <img src="./illustrations/undraw_engineering_team_a7n2.svg" class="join-all-banner" alt="#">
+            </div>
+            <!-- join-desc -->
+            <div class="join-description">
+                <h1 class="join-text title"><span class="selection">Join the </span><span class="gradient">Community</span>
+                </h1>
+                <span class="subtitle join-des selection">Get updated on every fun and exciting activity and take part in
+                    innovative
+                    and collaborative projects and contests.</span>
+            </div>
+            <!-- join-form -->
+            <div class="join-form-container">
+                <form class="join-form" method="post" autocomplete="off" name="google-sheet">
+                    <div class="input">
+                        <input type="text" name="First Name" class="form-control" value="" required=""
+                            placeholder="First Name" />
+                    </div>
+                    <div class="input">
+                        <input type="text" name="Last Name" class="form-control" value="" required="" placeholder="Last Name" />
+                    </div>
+                    <div class="input">
+                        <input type="text" name="TIT" class="form-control" placeholder="Collage (M/E/S/C)" value="" required="" />
+                    </div>
+                    <div class="input">
+                        <input type="email" name="Email" class="form-control" value="" required="" placeholder="Email" />
+                    </div>
+                    <div class="input">
+                        <button type="submit" class="btn-join">Join Now</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <!-- <div class="join-all">
+            <img src="./illustrations/undraw_engineering_team_a7n2.svg" class="join-all-banner" alt="#">
+            <div class="joinall-desc">
+                <h1 class="join-text title"><span class="selection">Join the </span><span class="gradient">Community</span>
+                </h1>
+                <span class="subtitle join-des selection">Get updated on every fun and exciting activity and take part in
+                    innovative
+                    and collaborative projects and contests.</span>
+            </div>
+            
         </div>
 
         <form class="join-form" method="post" autocomplete="off" name="google-sheet">
@@ -97,11 +137,15 @@
                 <input type="email" name="Email" class="form-control" value="" required="" placeholder="Email" />
             </div>
             <div class="input">
-                <button type="submit" class="btn">Join Now</button>
+                <button type="submit" class="btn-join">Join Now</button>
             </div>
-        </form>
+        </form> -->
 
     </section>
+    
+    <footer>
+        <p class="copyright-disclaimer">&#169 2022 Copyright, COPTIT</p>
+    </footer>
 
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxB9KoVN8WLfu1t2RipSQMgrBszgIOxXFtWsd5cONkWOYy_UpkYZauzoEMjmWbvpmbs/exec'
