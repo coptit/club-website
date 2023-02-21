@@ -50,8 +50,9 @@ body {
     color: black;
     font-family: 'Righteous', cursive;
     text-decoration: none;
-    padding: 1rem;
+    margin: 1rem;
     transition: all 0.2s;
+    font-size: 2rem;
 }
 
 .main-nav a:hover {
@@ -85,24 +86,38 @@ body {
     margin-bottom: 2rem;
 }
 
-.btn {
+.btn-join {
+    font-weight: 500;
+    padding: 7px 20px;
     color: white;
-    font-weight: 600;
-    background-color: #ff0066;
-    padding: .75rem 1.5rem;
+    background: #ff0066;
+    border: 2px solid #ff0066;
     border-radius: .5rem;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: .9rem;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    border: 1px #ff0066 solid;
+    font-family: 'Josefin Sans', sans-serif;
     transition: all 0.2s;
+}
+.btn-join:hover {
+    background: transparent;
+    color: #ff0066;
+}
+
+.align-btn {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.btn {
+    color: black;
+    text-decoration: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: block;
 }
 
 .btn:hover {
-    background-color: transparent;
+    /* background-color: transparent; */
     color: #ff0066;
 }
 
@@ -122,7 +137,7 @@ body {
 
     .discord-up,
     .github-up,
-    .join-down {
+    .join-down{
         display: none;
     }
 }
@@ -131,7 +146,7 @@ body {
 
     .discord-down,
     .github-down,
-    .join-up {
+    .join-up{
         display: none;
     }
 }
@@ -150,14 +165,17 @@ body {
     color: black;
 }
 
-.upcomming-events h1 {
+
+/* Upcomming-Event  */
+.title-sytle-theme {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2em;
     margin-left: 7vw;
     position: relative;
+    margin-bottom: 2rem;
 }
 
-.upcomming-events h1::before {
+.title-sytle-theme::before {
     content: " ";
     background-color: #ff0066;
     position: absolute;
@@ -173,6 +191,7 @@ body {
     list-style: none;
     gap: 3rem;
     padding: 0;
+    margin-bottom: 3rem;
 }
 
 .event {
@@ -207,4 +226,20 @@ body {
 
 .event-register:active {
     transform: translateY(4px);
+}
+
+.ney {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 5rem 0;
+}
+
+/* Footer-design */
+
+.copyright-disclaimer {
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    margin: 1rem 0;
+    /* position: absolute;
+    bottom: 0; */
 }

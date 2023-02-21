@@ -16,7 +16,6 @@
 
 .main-content .intro-text {
     padding: 1.5rem;
-    border: 1px solid rgba(0, 0, 0, 0.68);
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.68);
     border-radius: 0.5rem;
     display: flex;
@@ -26,7 +25,7 @@
     align-self: center;
 }
 
-.main-content .upcomming-events {
+.upcomming-events {
     /* padding: 1.5rem; */
 }
 
