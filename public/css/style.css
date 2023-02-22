@@ -206,7 +206,9 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     /* background: lightblue; temp */
     cursor: pointer;
+    transition: all 0.2s;
 }
+
 
 .event-title {
     font-size: 1.5em;
@@ -238,17 +240,3 @@ body {
     margin: 5rem 0;
 }
 
-/* Footer-design */
-/* footer {
-    position: relative;
-} */
-.copyright-disclaimer {
-    text-align: center;
-    font-family: 'poppins', sans-serif;
-    margin: 1rem 0;
-    position: absolute;
-    /* bottom: 0; */
-    left: 50%;
-    transform: translate(-50%, 50%);
-    margin: auto;
-}
