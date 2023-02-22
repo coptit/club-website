@@ -240,3 +240,14 @@ body {
     margin: 5rem 0;
 }
 
+@media (max-width: 500px) {
+    .title-sytle-theme{
+        font-size: 1.5rem;
+    }
+    .event-title {
+        font-size: 1.2rem;
+    }
+    .event-desc {
+        font-size: 0.8rem;
+    }
+}
