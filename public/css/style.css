@@ -9,12 +9,15 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    /* Resetting margin, padding  */
+    margin: 0;
+    padding: 0;
 }
 
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    /* min-height: 100vh;*/
 }
 
 .full-height-grow {
@@ -47,7 +50,9 @@ body {
     color: black;
     font-family: 'Righteous', cursive;
     text-decoration: none;
-    padding: 1rem;
+    margin: 1rem;
+    transition: all 0.2s;
+    font-size: 2rem;
 }
 
 .main-nav a:hover {
@@ -81,24 +86,43 @@ body {
     margin-bottom: 2rem;
 }
 
-.btn {
+.btn-join {
+    font-weight: 500;
+    padding: 7px 20px;
     color: white;
-    font-weight: 600;
-    background-color: #ff0066;
-    padding: .75rem 1.5rem;
+    background: #ff0066;
+    border: 2px solid #ff0066;
     border-radius: .5rem;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: .9rem;
-    outline: none;
-    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.2s;
+}
+.btn-join:hover {
+    background: transparent;
+    color: #ff0066;
+}
+
+.btn-join:active {
+    transform: translateY(4px);
+}
+
+.align-btn {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.btn {
+    color: black;
+    text-decoration: none;
+    font-size: 2.5rem;
     cursor: pointer;
-    border: 1px #ff0066 solid;
+    transition: all 0.2s;
+    display: block;
 }
 
 .btn:hover {
-    background-color: white;
-    color: black;
+    /* background-color: transparent; */
+    color: #ff0066;
 }
 
 .btn:active {
@@ -117,7 +141,7 @@ body {
 
     .discord-up,
     .github-up,
-    .join-down {
+    .join-down{
         display: none;
     }
 }
@@ -126,7 +150,7 @@ body {
 
     .discord-down,
     .github-down,
-    .join-up {
+    .join-up{
         display: none;
     }
 }
@@ -144,3 +168,75 @@ body {
     background-color: #33ffff;
     color: black;
 }
+
+
+/* Upcomming-Event  */
+.title-sytle-theme {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    margin-left: 7vw;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.title-sytle-theme::before {
+    content: " ";
+    background-color: #ff0066;
+    position: absolute;
+    width: 6.5vw;
+    height: 3px;
+    top: 40%;
+    left: -7vw;
+}
+
+.eventlist {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 3rem;
+    padding: 0;
+    margin-bottom: 3rem;
+}
+
+.event {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    /* background: lightblue; temp */
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+
+.event-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.event-register {
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    background-color: #ff0066;
+    text-decoration: none;
+    border: 2px solid #ff0066;
+    transition: all 0.2s;
+}
+.event-register:hover {
+    background-color: transparent;
+    color: #ff0066;
+}
+
+.event-register:active {
+    transform: translateY(4px);
+}
+
+.ney {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 5rem 0;
+}
+

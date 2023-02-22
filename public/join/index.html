@@ -59,39 +59,57 @@
 
         <nav class="main-nav">
             <ul>
-                <li><a href="https://discord.gg/uWZQP7q3UJ" target="_blank" class="discord-up">Discord</a></li>
-                <li><a href="https://github.com/coptit" class="github-up">GitHub</a></li>
+                <li>
+                    <a href="https://discord.gg/uWZQP7q3UJ" target="_blank" class="discord-up">
+                        <ion-icon name="logo-discord"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/coptit" class="github-up">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header><!-- header -->
 
     <section class="join-main-section">
-        <div class="join-all">
-            <h1 class="join-text title"><span class="selection">Join the </span><span class="gradient">Community</span>
-            </h1>
-            <span class="subtitle join-des selection">Get updated on every fun and exciting activity and take part in
-                innovative
-                and collaborative projects and contests.</span>
+        <div class="join-container">
+            <!-- join-banner -->
+            <div class="join-banner">
+                <img src="./illustrations/undraw_engineering_team_a7n2.svg" class="join-all-banner" alt="#">
+            </div>
+            <!-- join-desc -->
+            <div class="join-description">
+                <h1 class="join-text title"><span class="selection">Join the </span><span class="gradient">Community</span>
+                </h1>
+                <span class="subtitle join-des selection">Get updated on every fun and exciting activity and take part in
+                    innovative
+                    and collaborative projects and contests.</span>
+            </div>
+            <!-- join-form -->
+            <div class="join-form-container">
+                <form class="join-form" method="post" autocomplete="off" name="google-sheet">
+                    <div class="input">
+                        <input type="text" name="First Name" class="form-control" value="" required=""
+                            placeholder="First Name" />
+                    </div>
+                    <div class="input">
+                        <input type="text" name="Last Name" class="form-control" value="" required="" placeholder="Last Name" />
+                    </div>
+                    <div class="input">
+                        <input type="text" name="TIT" class="form-control" placeholder="Collage (M/E/S/C)" value="" required="" />
+                    </div>
+                    <div class="input">
+                        <input type="email" name="Email" class="form-control" value="" required="" placeholder="Email" />
+                    </div>
+                    <div class="input">
+                        <button type="submit" class="btn-join">Join Now</button>
+                    </div>
+                </form>
+            </div>
+            
         </div>
-
-        <form class="join-form" method="post" autocomplete="off" name="google-sheet">
-            <div class="input">
-                <input type="text" name="First Name" class="form-control" value="" required=""
-                    placeholder="First Name" />
-            </div>
-            <div class="input">
-                <input type="text" name="Last Name" class="form-control" value="" required="" placeholder="Last Name" />
-            </div>
-            <div class="input">
-                <input type="text" name="TIT" class="form-control" placeholder="Collage (M/E/S/C)" value="" required="" />
-            </div>
-            <div class="input">
-                <input type="email" name="Email" class="form-control" value="" required="" placeholder="Email" />
-            </div>
-            <div class="input">
-                <button type="submit" class="btn">Join Now</button>
-            </div>
-        </form>
 
     </section>
 
@@ -123,7 +141,9 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <!-- Ion-Icons  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body><!-- body -->
 
 </html>
