@@ -193,7 +193,7 @@ body {
     display: flex;
     flex-direction: column;
     list-style: none;
-    gap: 3rem;
+    gap: 2rem;
     padding: 0;
     margin-bottom: 3rem;
 }
@@ -204,11 +204,14 @@ body {
     justify-content: space-between;
     align-items: center;
     font-family: 'Josefin Sans', sans-serif;
-    /* background: lightblue; temp */
-    cursor: pointer;
-    transition: all 0.2s;
+    padding: 0.5rem;
+    transform: all 0.3s;
+    border-radius: 0.5rem;
 }
+.event:hover {
+    background-color: rgba(0, 0, 0, 0.05);
 
+}
 
 .event-title {
     font-size: 1.5em;
@@ -250,4 +253,27 @@ body {
     .event-desc {
         font-size: 0.8rem;
     }
+}
+
+/* Past-Event */
+.past-event{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+.past-event:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.p-event-a {
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    place-items: bottom;
+}
+
+.p-event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
