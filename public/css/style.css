@@ -277,3 +277,19 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+
+.past-event-mobile-view {
+    display: none;
+}
+
+@media (max-width: 501px) {
+    .past-event-mobile-view {
+        display: block;
+    }
+    .past-event-desktop-view {
+        display: none;
+    }
+    .p-event-right {
+        justify-content: end;
+    }
+}
