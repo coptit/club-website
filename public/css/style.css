@@ -6,9 +6,9 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     /* Resetting margin, padding  */
     margin: 0;
     padding: 0;
@@ -18,6 +18,7 @@ body {
     margin: 0;
     padding: 0;
     /* min-height: 100vh;*/
+    /* overflow: hidden; */
 }
 
 .full-height-grow {
@@ -131,8 +132,8 @@ body {
 
 .gradient {
     background: linear-gradient(70deg, #FDA000 -1.37%, #ff0066 78.71%);
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1px;
 }
@@ -169,6 +170,73 @@ body {
     color: black;
 }
 
+/* Benefit Section */
+.info-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 3rem 0;
+    gap: 1rem;
+}
+
+#balloon1{
+    transform: translateY(5px);
+} 
+
+#balloon1,
+#balloon2 {
+    animation: giggle 5s ease-in infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes giggle {
+    0%,
+    100% {
+        transform:rotate(3deg);
+    }
+    50% {
+        transform: rotate(-3deg);
+    }
+}
+.info-container-right{
+    margin: auto 0;
+}
+.what-we-provide {
+    text-align: center;
+}
+.wwp-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.benefit-box {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+.benefit-box:hover {
+    transform: scale(1.2);
+}
+.benefit-box ion-icon {
+    font-size: 2rem;
+    color: #ff3300;
+    margin-bottom: 0.7rem;
+    pointer-events: none;
+}
+.benefit-name {
+    font-size: 1rem;
+}
+.wwp-desc {
+    text-align: center;
+}
+@media (max-width: 500px) {
+    .info-container{
+        grid-template-columns: 1fr;
+    }
+}
 
 /* Upcomming-Event  */
 .title-sytle-theme {
@@ -208,6 +276,7 @@ body {
     transform: all 0.3s;
     border-radius: 0.5rem;
 }
+
 .event:hover {
     background-color: rgba(0, 0, 0, 0.05);
 
@@ -244,6 +313,12 @@ body {
 }
 
 @media (max-width: 500px) {
+    .title {
+        font-size: 1.6rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
     .title-sytle-theme{
         font-size: 1.5rem;
     }
@@ -276,6 +351,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: right;
 }
 
 .past-event-mobile-view {

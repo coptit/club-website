@@ -347,3 +347,8 @@ display: none;
 [hidden] {
 display: none;
 }
+
+/* Hiding Scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
