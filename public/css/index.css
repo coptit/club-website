@@ -16,17 +16,13 @@
 
 .main-content .intro-text {
     padding: 1.5rem;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.68);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 30%);
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 2rem 0;
     align-self: center;
-}
-
-.upcomming-events {
-    /* padding: 1.5rem; */
 }
 
 @media (max-width: 900px) {

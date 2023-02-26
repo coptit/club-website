@@ -9,13 +9,14 @@
 }
 
 .join-container {
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     gap: 2rem;
-    margin-bottom: 5rem;
+
+    margin: 4rem 0;
 }
 
 .join-banner {
@@ -23,6 +24,7 @@
     display: flex;
     place-content: center;
 }
+
 .join-banner img {
     width: 70%;
     min-width: 300px;
@@ -104,7 +106,7 @@
         margin: 2rem 0;
         ;
         padding: 15px;
-        border-radius: 4px;
+        border-radius: 0.5rem;
     }
 
     .input label {
@@ -126,6 +128,14 @@
     .main-header {
         justify-content: center;
     }
+
+    .join-text {
+        font-size: 2.5rem;
+    }
+    .subtitle {
+        font-size: 1rem
+    }
+
 }
 
 input {
