@@ -231,6 +231,8 @@ body {
 }
 .wwp-desc {
     text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 1rem;
 }
 @media (max-width: 500px) {
     .info-container{
