@@ -190,7 +190,7 @@ body {
 
 #balloon1,
 #balloon2 {
-    animation: giggle 5s ease-in infinite;
+    animation: giggle 5s ease-in-out infinite;
     transform-origin: bottom;
     transform-box: fill-box;
 }
