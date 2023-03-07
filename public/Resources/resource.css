@@ -1,0 +1,113 @@
+:root {
+    --Theme-color1: #ff0066;
+    --Theme-color2: #ff3300;
+}
+
+.resources-container{
+    display: flex;
+    gap: 1rem;
+}
+
+#lib-svg {
+    width: 40%;
+}
+
+.r-container-right {
+    width: 100%;
+}
+
+.r-title {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.r-desc {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 1rem;
+}
+.r-container-right ul {
+    display: flex;
+    list-style: none;
+    margin: 2rem 0;
+    justify-content: space-around;
+}
+
+.r-container-right ul li {
+    text-align: center;
+
+}
+
+.r-container-right ul li ion-icon {
+    font-size: 2rem;
+    color: var(--Theme-color1);
+    margin: 1rem;
+}
+
+.popular {
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+.popular-container {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+
+}
+
+.book {
+    /* width: 220px; */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px -4.5px  black;
+    gap: 1rem;
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s;
+    position: relative;
+    align-items: center;
+}
+
+.book-banner-inv{
+    width: 100%;
+    position: absolute;
+    display: none;
+    transform: translateY(-100px);
+    transition: all 0.3s ease-in-out;
+}
+
+.book:hover {
+    transform: scale(1.2);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.001, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+.book:hover .book-banner-inv {
+    transform: scale(1.2), translateY(0px);
+    display: block;
+
+}
+
+.book-banner {
+    width: 100%;
+}
+
+.booktitle {
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+.booktag {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0.2rem 1rem;
+    border-radius: 999px;
+    display: inline-block;
+    border: 1px solid var(--Theme-color1);
+    background-color: #ff00662d;
+    line-height: 15px;
+}
+
