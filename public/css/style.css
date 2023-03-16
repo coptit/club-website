@@ -245,6 +245,33 @@ body {
     }
 }
 
+/* Library Section  */
+.lib_sec {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 30%);
+    text-decoration: none;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 2rem 1rem;
+    margin: 2rem 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    transition: all 0.2s;
+}
+.lib_sec ion-icon {
+    font-size: 3rem;
+    color: var(--Theme-color1);
+}
+.lib-title {
+    line-height: 0;
+    
+}
+.lib_sec:hover{
+    background: rgba(0, 0, 0, 0.05);
+}
+
 /* Upcomming-Event  */
 .title-sytle-theme {
     font-family: 'Josefin Sans', sans-serif;
