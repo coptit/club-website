@@ -1,5 +1,5 @@
 // Count-Down Timer for contest: 
-let contest_date = new Date("feb 26, 2023 10:50:00").getTime();
+let contest_date = new Date("Mar 8, 2023 10:50:00").getTime();
 // Needs to be set everytime a contest occures
 
 function reg_close(){

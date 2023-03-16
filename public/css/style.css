@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+:root {
+    --Theme-color1: #ff0066;
+    --Theme-color2: #ff3300;
+}
+
 *,
 *::before,
 *::after {
@@ -57,7 +62,7 @@ body {
 }
 
 .main-nav a:hover {
-    color: #ff3300;
+    color: var(--Theme-color2);
 }
 
 .main-header {
@@ -91,8 +96,8 @@ body {
     font-weight: 500;
     padding: 7px 20px;
     color: white;
-    background: #ff0066;
-    border: 2px solid #ff0066;
+    background: var(--Theme-color1);
+    border: 2px solid var(--Theme-color1);
     border-radius: .5rem;
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
@@ -100,7 +105,7 @@ body {
 }
 .btn-join:hover {
     background: transparent;
-    color: #ff0066;
+    color: var(--Theme-color1);
 }
 
 .btn-join:active {
@@ -123,7 +128,7 @@ body {
 
 .btn:hover {
     /* background-color: transparent; */
-    color: #ff0066;
+    color: var(--Theme-color1);
 }
 
 .btn:active {
@@ -157,7 +162,7 @@ body {
 }
 
 .top {
-    border: 1px #ff0066 solid;
+    border: 1px solid var(--Theme-color1);
     border-radius: 10px;
 }
 
@@ -184,7 +189,7 @@ body {
 
 #balloon1,
 #balloon2 {
-    animation: giggle 5s ease-in infinite;
+    animation: giggle 5s ease-in-out infinite;
     transform-origin: bottom;
     transform-box: fill-box;
 }
@@ -222,7 +227,7 @@ body {
 }
 .benefit-box ion-icon {
     font-size: 2rem;
-    color: #ff3300;
+    color: var(--Theme-color2);
     margin-bottom: 0.7rem;
     pointer-events: none;
 }
@@ -240,6 +245,33 @@ body {
     }
 }
 
+/* Library Section  */
+.lib_sec {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 30%);
+    text-decoration: none;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 2rem 1rem;
+    margin: 2rem 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    transition: all 0.2s;
+}
+.lib_sec ion-icon {
+    font-size: 3rem;
+    color: var(--Theme-color1);
+}
+.lib-title {
+    line-height: 0;
+    
+}
+.lib_sec:hover{
+    background: rgba(0, 0, 0, 0.05);
+}
+
 /* Upcomming-Event  */
 .title-sytle-theme {
     font-family: 'Josefin Sans', sans-serif;
@@ -251,7 +283,7 @@ body {
 
 .title-sytle-theme::before {
     content: " ";
-    background-color: #ff0066;
+    background-color: var(--Theme-color1);
     position: absolute;
     width: 6.5vw;
     height: 3px;
@@ -294,14 +326,14 @@ body {
     border-radius: 0.5rem;
     color: white;
     font-size: 1rem;
-    background-color: #ff0066;
+    background-color: var(--Theme-color1);
     text-decoration: none;
-    border: 2px solid #ff0066;
+    border: 2px solid var(--Theme-color1);
     transition: all 0.2s;
 }
 .event-register:hover {
     background-color: transparent;
-    color: #ff0066;
+    color: var(--Theme-color1);
 }
 
 .event-register:active {

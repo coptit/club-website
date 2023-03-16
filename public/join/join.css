@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+:root {
+    --Theme-color1: #ff0066;
+    --Theme-color2: #ff3300;
+}
+
 .join-main-section {
     display: flex;
     /* justify-content: space-between; */
@@ -83,7 +88,7 @@
 }
 
 .input input:focus {
-    border-color: #ff0066;
+    border-color: var(--Theme-color1);
 }
 
 .join-main-section .join-all .join-des {
