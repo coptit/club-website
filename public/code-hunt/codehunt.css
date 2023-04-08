@@ -55,13 +55,13 @@ html {
   text-decoration: none;
   color: black;
   border: 2px solid black;
-  padding: 7px 40px;
+  padding: 10px 40px;
   border-radius: 999px;
   transition: all 0.3s;
 }
 
 .btns {
-  line-height: 45px;
+  /* line-height: 45px; */
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
