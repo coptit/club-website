@@ -322,6 +322,7 @@ body {
 }
 
 .event-register {
+    line-height: 100%;
     padding: 0.6rem;
     border-radius: 0.5rem;
     color: white;
