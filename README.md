@@ -16,4 +16,9 @@ git clone https://github.com/coptit/club-website.git
 cd club-website
 ```
 
-#### 4. Open VSCode, Edit and Check the changes with `Live Server`
+#### 4. The Website code is in `public` folder, so move to the `public` folder
+```bash
+cd public
+```
+
+#### 5. Open VSCode, Edit and Check the changes with `Live Server`
