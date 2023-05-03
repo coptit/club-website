@@ -83,7 +83,7 @@
     color: white;
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.0em;
     padding: 4px;
 }
 
@@ -143,6 +143,6 @@
 
 }
 
-input {
+/* input {
     text-align: center;
-}
+} */
