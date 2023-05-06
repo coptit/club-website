@@ -429,7 +429,9 @@ body {
 .email-coptit {
     text-align: center;
 }
-
+.footy {
+margin-top: 100px;
+}
 @keyframes g-rotate {
     0% {
         transform: rotate(0deg);
