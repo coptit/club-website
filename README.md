@@ -1,5 +1,7 @@
 Club Website for Coptit club.
 
+![demo-image](https://tiddi.kunalsin9h.dev/YjQO-MG)
+
 ### Steps to Run Locally
 
 #### 1. Fork the Repository
