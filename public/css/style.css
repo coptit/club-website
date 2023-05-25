@@ -147,6 +147,7 @@ body {
 
     .discord-up,
     .github-up,
+    .codeforces-up,
     .join-down{
         display: none;
     }
@@ -156,6 +157,7 @@ body {
 
     .discord-down,
     .github-down,
+    .codeforces-down,
     .join-up{
         display: none;
     }

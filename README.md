@@ -1,6 +1,6 @@
 Club Website for Coptit club.
 
-![demo-image](https://tiddi.kunalsin9h.dev/YjQO-MG)
+![demo-image](https://tiddi.kunalsin9h.dev/IB7DGHb)
 
 ### Steps to Run Locally
 
@@ -19,6 +19,7 @@ cd club-website
 ```
 
 #### 4. The Website code is in `public` folder, so move to the `public` folder
+
 ```bash
 cd public
 ```
