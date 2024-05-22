@@ -1,6 +1,6 @@
 Club Website for Coptit club.
 
-![demo-image](https://tiddi.kunalsin9h.com/IB7DGHb)
+![demo-image](https://tiddi.kunalsin9h.com/1dCK4i3)
 
 ### Steps to Run Locally
 
